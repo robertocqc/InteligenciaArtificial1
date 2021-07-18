@@ -1,0 +1,268 @@
+//SCRIPT PARA NEO4J
+//CREACION DE NODOS Y CONEXIONES
+CREATE
+(n1:Nodo {titulo: 'PUMAYUNGA BAJO'}),
+(nA1:Nodo {titulo: 'CENTRO EDUCATIVO MADRID'}),
+(nA2:Nodo {titulo: 'ESCUELA EMILIO MURILLO'}),
+(nA3:Nodo {titulo: 'ESCUELA RAFAEL AGUILAR3'}),
+(nA4:Nodo {titulo: 'COMUNIDAD EDUCATIVA PARTICULAR CARLOS CRESPI II'}),
+(nA5:Nodo {titulo: 'UNIDAD EDUCATIVA LUIS MONSALVE POZO'}),
+(nB1:Nodo {titulo: 'CENTRO EDUCATIVO INICIAL EINSTEIN'}),
+(nB2:Nodo {titulo: 'UNIDAD EDUCATIVA SANTA ANA'}),
+(nB3:Nodo {titulo: 'UNIDAD EDUCATIVA LAS PENCAS'}),
+(nB4:Nodo {titulo: 'UNIDAD EDUCATIVA VICTOR GERARDO AGUILAR'}),
+(nB5:Nodo {titulo: 'UNIVERSIDAD CATOLICA DE CUENCA'}),
+(nB6:Nodo {titulo: 'ESCUELA BRUMEL'}),
+(nB7:Nodo {titulo: 'ESCUELA LUIS ROBERTO BRAVO'}),
+(nB8:Nodo {titulo: 'ESCUELA HERMANO MIGUEL'}),
+(nC1:Nodo {titulo: 'PRIMEROS PASOS'}),
+(nC2:Nodo {titulo: 'ESCUELA 12 DE ABRIL'}),
+(nC3:Nodo {titulo: 'UNIDAD EDUCATIVA REPUBLICA DEL ECUADOR'}),
+(nC4:Nodo {titulo: 'ESCUELA DE EDUCACION BASICA JULIO MARIA MATOVELLE'}),
+(nC5:Nodo {titulo: 'ESCUELA DE EDUCACION BASICA REPUBLICA DE CHILE'}),
+(nC6:Nodo {titulo: 'ESCUELA JUAN MONTALVO'}),
+(nC7:Nodo {titulo: 'CAMPUS POSGRADOS ESTANCIA LUIS CORDERO'}),
+(nD1:Nodo {titulo: 'COLEGIO MIGUEL MORENO'}),
+(nD2:Nodo {titulo: 'UNIDAD EDUCATIVA BENJAMIN RAMIREZ'}),
+(nD3:Nodo {titulo: 'ESCUELA EUGENIO ESPEJO'}),
+(nD4:Nodo {titulo: 'UNIDAD EDUCATIVA PARTICULAR DOMINICANA'}),
+(nD5:Nodo {titulo: 'UNIDAD EDUCATIVA SALESIANA MARIA AUXILIADORA'}),
+(nD6:Nodo {titulo: 'UNIDAD EDUCATIVA ZOILA ESPERANZA PALACIOS'}),
+(nD7:Nodo {titulo: 'UNIVERSIDAD POLITECNICA SALESIANA'}),
+(nD8:Nodo {titulo: 'UNIDAD EDUCATIVA LA INMACULADA'}),
+(nD9:Nodo {titulo: 'UNIDAD EDUCATIVA KENNEDY'}),
+(nD10:Nodo {titulo: 'COLEGIO MILITAR ABDON CALDERON'}),
+(nD11:Nodo {titulo: 'UNIDAD EDUCATIVA BUENA ESPERANZA'}),
+(nE1:Nodo {titulo: 'UNIDAD EDUCATIVA PORVENIR'}),
+(nE2:Nodo {titulo: 'UNIDAD DE EDUCACION BASICA NICOLAS SOJOS'}),
+(nE3:Nodo {titulo: 'CENTRO EDUCATIVO LICEO DEL AZUAY'}),
+(nE4:Nodo {titulo: 'UNIDAD EDUCATIVA SOR TERESA VALSE'}),
+(nE5:Nodo {titulo: 'UNIDAD EDUCATIVA HERLINDA TORAL'}),
+(nE6:Nodo {titulo: 'COLEGIO LATINOAMERICANO'}),
+(nE7:Nodo {titulo: 'UNIDAD EDUCATIVA SAN FRANCISCO DE SALES'}),
+(nE8:Nodo {titulo: 'UNIDAD EDUCATIVA ROSA DE JESUS CORDERO'}),
+(nE9:Nodo {titulo: 'UNIDAD EDUCATIVA SUDAMERICANO'}),
+(nF1:Nodo {titulo: 'UNIDAD EDUCATIVA CIUDAD DE CUENCA'}),
+(nF2:Nodo {titulo: 'UNIVERSIDAD DE CUENCA'}),
+(nF3:Nodo {titulo: 'UNIDAD EDUCATIVA GASPAR SANGURIMA'}),
+(nF4:Nodo {titulo: 'UNIDAD EDUCATIVA AMERICAN SCHOOL'}),
+(nG1:Nodo {titulo: 'UNIDAD EDUCATIVA PARTICULAR BORJA'}),
+(nG2:Nodo {titulo: 'UNIDAD EDUCATIVA TECNICO SALESIANO'}),
+(nG3:Nodo {titulo: 'UNIDAD EDUCATIVA LA ASUNCION'}),
+(nG4:Nodo {titulo: 'COLEGIO BENIGNO MALO'}),
+(nG5:Nodo {titulo: 'CENTRO EDUCATIVO INICIAL GARABATOS'}),
+(nG6:Nodo {titulo: 'COLEGIO ALEMAN'}),
+(n1)-[:Conexion {costo: 1.54}]->(nA1),
+(n1)-[:Conexion {costo: 1.51}]->(nA2),
+(n1)-[:Conexion {costo: 1.56}]->(nA3),
+(n1)-[:Conexion {costo: 2.54}]->(nA4),
+(n1)-[:Conexion {costo: 2.25}]->(nA5),
+(nA1)-[:Conexion {costo: 0.5}]->(nB1),
+(nA1)-[:Conexion {costo: 0.53}]->(nB2),
+(nA2)-[:Conexion {costo: 1.03}]->(nB3),
+(nA3)-[:Conexion {costo: 0.8}]->(nB4),
+(nA3)-[:Conexion {costo: 1.17}]->(nB5),
+(nA4)-[:Conexion {costo: 1.11}]->(nB6),
+(nA4)-[:Conexion {costo: 1.17}]->(nB7),
+(nA5)-[:Conexion {costo: 1.27}]->(nB8),
+(nB3)-[:Conexion {costo: 0.56}]->(nC1),
+(nB4)-[:Conexion {costo: 0.72}]->(nC2),
+(nB4)-[:Conexion {costo: 0.37}]->(nC3),
+(nB6)-[:Conexion {costo: 0.82}]->(nC4),
+(nB7)-[:Conexion {costo: 0.48}]->(nC5),
+(nB7)-[:Conexion {costo: 0.9}]->(nC6),
+(nB8)-[:Conexion {costo: 0.8}]->(nC7),
+(nC1)-[:Conexion {costo: 1.27}]->(nD1),
+(nC2)-[:Conexion {costo: 0.8}]->(nD2),
+(nC2)-[:Conexion {costo: 1.17}]->(nD3),
+(nC4)-[:Conexion {costo: 0.64}]->(nD4),
+(nC4)-[:Conexion {costo: 0.77}]->(nD5),
+(nC4)-[:Conexion {costo: 0.48}]->(nD6),
+(nC5)-[:Conexion {costo: 0.45}]->(nD7),
+(nC6)-[:Conexion {costo: 1.78}]->(nD8),
+(nC6)-[:Conexion {costo: 2.17}]->(nD9),
+(nC6)-[:Conexion {costo: 2.44}]->(nD10),
+(nC7)-[:Conexion {costo: 1.38}]->(nD11),
+(nD1)-[:Conexion {costo: 0.9}]->(nE1),
+(nD1)-[:Conexion {costo: 1.78}]->(nE2),
+(nD4)-[:Conexion {costo: 0.32}]->(nE3),
+(nD6)-[:Conexion {costo: 1.3}]->(nE4),
+(nD6)-[:Conexion {costo: 1.48}]->(nE5),
+(nD8)-[:Conexion {costo: 0.85}]->(nE6),
+(nD11)-[:Conexion {costo: 1.75}]->(nE7),
+(nD11)-[:Conexion {costo: 1.4}]->(nE8),
+(nD11)-[:Conexion {costo: 0.64}]->(nE9),
+(nE1)-[:Conexion {costo: 1.19}]->(nF1),
+(nE3)-[:Conexion {costo: 0.66}]->(nF2),
+(nE5)-[:Conexion {costo: 0.48}]->(nF3),
+(nE7)-[:Conexion {costo: 1.72}]->(nF4),
+(nF1)-[:Conexion {costo: 0.87}]->(nG1),
+(nF2)-[:Conexion {costo: 1.78}]->(nG2),
+(nF2)-[:Conexion {costo: 2.39}]->(nG3),
+(nF2)-[:Conexion {costo: 0.4}]->(nG4),
+(nF4)-[:Conexion {costo: 2.92}]->(nG5),
+(nF4)-[:Conexion {costo: 3.37}]->(nG6)
+
+//CREO EL GRAFO
+CALL gds.graph.create(
+    'myGraph',
+    'Nodo',
+    'Conexion',
+    {
+        relationshipProperties: 'costo'
+    }
+)
+
+//BUSQUEDA POR AMPLITUD
+//NODO DESTINO:UNIVERSIDAD POLITECNICA SALESIANA
+MATCH (n1:Nodo{titulo:'PUMAYUNGA BAJO'}), (nD7:Nodo{titulo:'UNIVERSIDAD POLITECNICA SALESIANA'})
+WITH id(n1) AS startNode, [id(nD7)] AS targetNodes
+CALL gds.alpha.bfs.stream('unidadesEducativasGraph2', {startNode: startNode, targetNodes: targetNodes})
+YIELD path
+UNWIND [ n in nodes(path) | n.titulo ] AS amplitud_n1_nD7
+RETURN amplitud_n1_nD7
+
+//NODO DESTINO:UNIDAD EDUCATIVA TECNICO SALESIANO
+MATCH (n1:Nodo{titulo:'PUMAYUNGA BAJO'}), (nG2:Nodo{titulo:'UNIDAD EDUCATIVA TECNICO SALESIANO'})
+WITH id(n1) AS startNode, [id(nG2)] AS targetNodes
+CALL gds.alpha.bfs.stream('unidadesEducativasGraph', {startNode: startNode, targetNodes: targetNodes})
+YIELD path
+UNWIND [ n in nodes(path) | n.titulo ] AS amplitud_n1_nG2
+RETURN amplitud_n1_nG2
+
+//NODO DESTINO:COLEGIO BENIGNO MALO
+MATCH (n1:Nodo{titulo:'PUMAYUNGA BAJO'}), (nG4:Nodo{titulo:'COLEGIO BENIGNO MALO'})
+WITH id(n1) AS startNode, [id(nG4)] AS targetNodes
+CALL gds.alpha.bfs.stream('unidadesEducativasGraph', {startNode: startNode, targetNodes: targetNodes})
+YIELD path
+UNWIND [ n in nodes(path) | n.titulo ] AS amplitud_n1_nG4
+RETURN amplitud_n1_nG4
+
+//NODO DESTINO:UNIDAD EDUCATIVA SALESIANA MARIA AUXILIADORA
+MATCH (n1:Nodo{titulo:'PUMAYUNGA BAJO'}), (nD5:Nodo{titulo:'UNIDAD EDUCATIVA SALESIANA MARIA AUXILIADORA'})
+WITH id(n1) AS startNode, [id(nD5)] AS targetNodes
+CALL gds.alpha.bfs.stream('unidadesEducativasGraph', {startNode: startNode, targetNodes: targetNodes})
+YIELD path
+UNWIND [ n in nodes(path) | n.titulo ] AS amplitud_n1_nD5
+RETURN amplitud_n1_nD5
+
+//NODO DESTINO:UNIVERSIDAD DE CUENCA
+MATCH (n1:Nodo{titulo:'PUMAYUNGA BAJO'}), (nF2:Nodo{titulo:'UNIVERSIDAD DE CUENCA'})
+WITH id(n1) AS startNode, [id(nF2)] AS targetNodes
+CALL gds.alpha.bfs.stream('unidadesEducativasGraph', {startNode: startNode, targetNodes: targetNodes})
+YIELD path
+UNWIND [ n in nodes(path) | n.titulo ] AS amplitud_n1_nF2
+RETURN amplitud_n1_nF2
+
+//BUSQUEDA POR COSTO UNIFORME
+//CON ESTA CONSULTA SE OBTIENE LA RUTA MAS CORTA CON EL RESPECTIVO PESO A TODOS LOS NODOS DEL GRAFO
+MATCH (n:Nodo {titulo: 'PUMAYUNGA BAJO'})
+CALL gds.alpha.shortestPath.deltaStepping.stream({
+  nodeProjection: 'Nodo',
+  relationshipProjection: {
+    Conexion: {
+      type: 'Conexion',
+      properties: 'costo'
+    }
+  },
+  startNode: n,
+  relationshipWeightProperty: 'costo',
+  delta: 3.0
+})
+YIELD nodeId, distance
+RETURN gds.util.asNode(nodeId).titulo AS UE_DESTINO, distance AS DISTANCIA
+
+//BUSQUEDA DIJKSTRA
+//NODO DESTINO:UNIVERSIDAD POLITECNICA SALESIANA
+MATCH (source:Nodo {titulo: 'PUMAYUNGA BAJO'}), (target:Nodo {titulo: 'UNIVERSIDAD POLITECNICA SALESIANA'})
+CALL gds.shortestPath.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    targetNode: target,
+    relationshipWeightProperty: 'costo'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
+
+//NODO DESTINO:UNIDAD EDUCATIVA TECNICO SALESIANO
+MATCH (source:Nodo {titulo: 'PUMAYUNGA BAJO'}), (target:Nodo {titulo: 'UNIDAD EDUCATIVA TECNICO SALESIANO'})
+CALL gds.shortestPath.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    targetNode: target,
+    relationshipWeightProperty: 'costo'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
+
+//NODO DESTINO:COLEGIO BENIGNO MALO
+MATCH (source:Nodo {titulo: 'PUMAYUNGA BAJO'}), (target:Nodo {titulo: 'COLEGIO BENIGNO MALO'})
+CALL gds.shortestPath.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    targetNode: target,
+    relationshipWeightProperty: 'costo'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
+
+//NODO DESTINO:UNIDAD EDUCATIVA SALESIANA MARIA AUXILIADORA
+MATCH (source:Nodo {titulo: 'PUMAYUNGA BAJO'}), (target:Nodo {titulo: 'UNIDAD EDUCATIVA SALESIANA MARIA AUXILIADORA'})
+CALL gds.shortestPath.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    targetNode: target,
+    relationshipWeightProperty: 'costo'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
+
+//NODO DESTINO:UNIVERSIDAD DE CUENCA
+MATCH (source:Nodo {titulo: 'PUMAYUNGA BAJO'}), (target:Nodo {titulo: 'UNIVERSIDAD DE CUENCA'})
+CALL gds.shortestPath.dijkstra.stream('myGraph', {
+    sourceNode: source,
+    targetNode: target,
+    relationshipWeightProperty: 'costo'
+})
+YIELD index, sourceNode, targetNode, totalCost, nodeIds, costs, path
+RETURN
+    index,
+    gds.util.asNode(sourceNode).name AS sourceNodeName,
+    gds.util.asNode(targetNode).name AS targetNodeName,
+    totalCost,
+    [nodeId IN nodeIds | gds.util.asNode(nodeId).name] AS nodeNames,
+    costs,
+    nodes(path) as path
+ORDER BY index
+
+
+
+
